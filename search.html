@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="english" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Pensieve</title>
+    <title>Search - Pensieve
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
 
 
 
-<link rel="canonical" href=".">
+
         <meta name="author" content="Al Faaz" />
 
     <!-- Open Graph tags -->
@@ -63,16 +64,7 @@ Pensieve            </a>
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <article>
-                <h2>
-                    <a href="./the-old-timer.html">The Old Timer</a>
-                </h2>
-                <div class="summary"><p>I still remember the day I came into this family. It promised to be a good time &mdash; and it was. There was never a dull moment with me around. Guy and Gal loved me. I was their companion when they came home, weary from work everyday. I was there when …</p>
-                    <a class="btn btn-info btn-xs" href="./the-old-timer.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
+<div id="tipue_search_content"></div>
         </div>
 
     </div>
@@ -98,5 +90,17 @@ Pensieve            </a>
 <script src="./theme/js/respond.min.js"></script>
 
 
+    <script type="text/javascript" src="./theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="./theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
