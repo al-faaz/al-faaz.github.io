@@ -263,19 +263,24 @@ figure.floatcenter, .align-center {
   margin-left: 10px;
 }
 
-/* custom css
+/* custom css */
 body
 {
-    font-family: "Roboto", sans-serif;
     color: black;
+    margin: 0 auto;
 }
-
+/*
 code, pre
 {
     font-family: "Roboto Mono", monospace;
 }
- */
- 
+*/
+
+p
+{
+    text-indent: 32px;
+}
+
 pre
 {
     font-size: 0.9em;
